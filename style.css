@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa;
+    background-image: linear-gradient(120deg, #e0f7fa 0%, #80deea 100%);
+}
+
+.container {
+    text-align: center;
+}
+
+.blue-gradient-square {
+    background: linear-gradient(to bottom right, #007BFF, #00BFFF);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.blue-gradient-square:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 150px;
+    margin-top: 10px; /* Added margin to create space between buttons */
+}
+
+button:hover {
+    background-color: #003f7f;
+}
+
+#weather-info {
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#weather-info img {
+    width: 100px;
+    height: 100px;
+}
+
+.circle-gradient {
+    background: radial-gradient(circle, #ff4081, #ff80ab);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
